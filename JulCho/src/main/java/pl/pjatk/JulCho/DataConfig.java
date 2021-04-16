@@ -1,6 +1,5 @@
 package pl.pjatk.JulCho;
 
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -28,7 +27,6 @@ public class DataConfig {
     }
 
     @Bean
-    @ConditionalOnProperty(name="my.custom.boolProperty")
     public String testPropertyValue()
     {
         return "Welcome from testPropertyValue";
